@@ -1,4 +1,4 @@
-# [Muhammet Abdullah Şahin's Personal HomePage](https://alper.karaca)
+# [Muhammet Abdullah Şahin's Personal HomePage](https://github.com/SahinMuhammetAbdullah)
 
 ## Purpose of This Page
 
@@ -9,8 +9,8 @@ This homepage is suppose to contain all my personal media and my personal projec
 ## Site Features
 
 * english and turkish support
-* [error page](https://alper.karaca/404.html)
-* [dark mode](https://alper.karaca/dark)
+* [error page]()
+* [dark mode]()
 
 ## Work in Progress Features
 
