@@ -1,65 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Muhammet Abdullah Şahin's Personal Page</title>
-		<link rel="stylesheet" href="/styles.css">
-		<link href="/favicon.png" rel="shortcut icon" type="image/x-icon" />
-		<img src="/pp.png" style="display: none;" />
-		<p style="display: none;">Hi, this is my personal page.</p>
-	</head>
-	<body>
-		<div class="container">
-			<div id="clock"></div>
-			<div class="bookmark-container">
-				<div class="bookmark-set">
-					<div class="bookmark-title">Who Am I?</div>
-					<div class="bookmark-inner-container">
-						<!-- <a class="bookmark" href="resume/resume.html">Who Am I?</a> -->
-						<a href="https://github.com/SahinMuhammetAbdullah/SahinMuhammetAbdullah.github.io/blob/main/MUHAMMET_ABDULLAH_%C5%9EAH%C4%B0N_Aselsan_Temal%C4%B1_Vizyoner_CV.pdf" class="bookmark">Who Am I?</a>
-					</div>
-				</div>
-				<div class="bookmark-set">
-					<div class="bookmark-title">My Social Media</div>
-					<div class="bookmark-inner-container">
-						<a class ="bookmark"href="sociallinks/social.html">Social Media and Contact</a>
-					</div>
-				</div>
-				<div class="bookmark-set">
-					<div class="bookmark-title">My Projects</div>
-					<div class="bookmark-inner-container">
-						<a class="bookmark" href="https://github.com/SahinMuhammetAbdullah" target="_blank">Github</a>
-						<a class="bookmark" href="https://github.com/SahinMuhammetAbdullah/SahinMuhammetAbdullah.github.io" target="_blank">This Page</a>
-					</div>
-				</div>
-				<div class="bookmark-set">
-					<div class="bookmark-title">Page Settings</div>
-					<div class="bookmark-inner-container">
-						<a class="bookmark" href="/">🇺🇸 English</a>
-						<a class="bookmark" href="/tr/">🇹🇷 Türkçe</a>
-						<a class="bookmark" href="/dark/">🌙 Dark Mode!</a>
-					</div>
-				</div>
-			</div>
-			<script>
-				// Get current time and format
-				function getTime() {
-					let date = new Date(),
-						min = date.getMinutes(),
-						sec = date.getSeconds(),
-						hour = date.getHours();
-					return "" + (hour < 10 ? ("0" + hour) : hour) + ":" + (min < 10 ? ("0" + min) : min) + ":" + (sec < 10 ? ("0" + sec) : sec);
-				}
-				window.onload = () => {
-					// Set up the clock
-					document.getElementById("clock").innerHTML = getTime();
-					// Set clock interval to tick clock
-					setInterval(() => {
-						document.getElementById("clock").innerHTML = getTime();
-					}, 100);
-				}
-			</script>
-	</body>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="/images/favicon.ico">
+    <title>Muhammet Abdullah Şahin</title>
+    <meta name="description" content="Bilgisayar Mühendisi Muhammet Abdullah Şahin'in Kişisel Web Sitesi">
+    <meta name="keywords"
+        content="muhammet,abdullah,şahin,bilgisayar mügendisi,mühendis,yazılımcı,yazılım uzmanı,backend,frontend">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-3 col-md-3 col-sm-12">
+                <img class="rounded-circle" src="/images/00000001.png" alt="profil foto" width="200px">
+                <div class="col-12">
+                    <div class="col-12" id="name">
+                        <p>MUHAMMET ABDULLAH ŞAHİN</p>
+                    </div>
+                    <div class="col-12">
+                        <h1 id="socialTag">Sosyal Medya Hesapları</h1>
+                        <a href="https://github.com/SahinMuhammetAbdullah" id="social" class="GitHub" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="https://tr.linkedin.com/in/muhammet-abdullah-sahin" id="social" class="LinkedIn"
+                            target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://twitter.com/SahinM_Abdullah" id="social" class="Twitter" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                            Twitter
+                        </a>
+                        <a href="https://medium.com/@m.sahinabdullah" id="social" class="Medium" target="_blank">
+                            <i class="fa-brands fa-medium"></i>
+                            Medium
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 col-md-9 col-sm-12">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../" style="font-size: xx-large;">Ana Sayfa</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i class="fas fa-bars" style="color:#000000; font-size:28px;"></i>
+                            </span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page"
+                                        href="../pages/aboutme.html">Hakkımda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/projectpage.html">Projeler</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/contact.html">İletişim</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/certificates.html">Sertifikalar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row">
+
+                    <div class="col-12" id="contents">
+                        <h1>Ana Sayfa</h1>
+                        <p class="container-fluid" style="font-size: xx-large;">
+                            Ondokuz Mayıs Üniversitesi
+                            Bilgisayar Mühendisliği
+                            2023-2024 Bahar Dönemi
+                            Web Programlama Dersi
+                            Ödevlere Hoşgeldiniz.
+                        </p>
+                        <button type="button" id="odevButonu" >
+                            <a href="/odev2/sayfa1.html">Ödev 2'ye git</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="con-12">&#169; Tüm Hakları Muhammet Abdullah Şahin'e Aittir</footer>
+    </div>
+
+</body>
+
 </html>
